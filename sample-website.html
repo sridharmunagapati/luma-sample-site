@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luma — Make room for what matters</title>
+  <style>
+    :root { --ink:#14213d; --muted:#55627d; --paper:#fffdf8; --peach:#ffcf99; --coral:#f3765d; --blue:#3b82f6; }
+    * { box-sizing:border-box; } body { margin:0; font-family:Inter, ui-sans-serif, system-ui, sans-serif; color:var(--ink); background:var(--paper); }
+    nav, main, footer { max-width:1120px; margin:auto; padding-left:24px; padding-right:24px; } nav { height:76px; display:flex; align-items:center; justify-content:space-between; }
+    .brand { font-size:1.35rem; font-weight:800; letter-spacing:-.06em; } .brand span { color:var(--coral); }
+    .navlinks { display:flex; gap:25px; align-items:center; } a { color:inherit; text-decoration:none; font-weight:600; }
+    .button { display:inline-block; background:var(--ink); color:white; padding:13px 19px; border-radius:999px; } .button.light { background:white; color:var(--ink); }
+    .hero { min-height:560px; display:grid; grid-template-columns:1.05fr .95fr; gap:50px; align-items:center; padding-top:48px; padding-bottom:80px; }
+    h1 { margin:0 0 22px; font-size:clamp(3.1rem,7vw,5.7rem); line-height:.94; letter-spacing:-.075em; } .eyebrow { color:var(--coral); font-weight:800; text-transform:uppercase; letter-spacing:.12em; font-size:.73rem; }
+    .lead { max-width:500px; color:var(--muted); font-size:1.15rem; line-height:1.65; margin:0 0 30px; }.cta { display:flex; gap:14px; align-items:center; flex-wrap:wrap; }.quiet { color:var(--muted); font-size:.92rem; }
+    .scene { height:420px; position:relative; border-radius:36px; overflow:hidden; background:#a8d8e8; }.sun { width:90px; height:90px; border-radius:50%; background:#ffd36c; position:absolute; top:43px; right:68px; }.hill { position:absolute; width:540px; height:310px; border-radius:50% 50% 0 0; bottom:-150px; }.hill.one { background:#5cb58a; left:-80px; }.hill.two { background:#356d77; right:-220px; bottom:-180px; }.house { position:absolute; left:39%; bottom:90px; width:135px; height:150px; background:#fff7e9; border-radius:5px 5px 0 0; }.roof { position:absolute; left:calc(39% - 17px); bottom:230px; width:0; height:0; border-left:84px solid transparent; border-right:84px solid transparent; border-bottom:80px solid var(--coral); }.door { background:var(--ink); width:32px; height:55px; position:absolute; left:52px; bottom:0; border-radius:20px 20px 0 0; }.window { position:absolute; width:29px; height:29px; top:40px; left:20px; background:#a8d8e8; border-radius:50%; }.window.right { left:86px; }.cloud { position:absolute; top:80px; left:55px; height:20px; width:80px; background:white; border-radius:30px; opacity:.8; }.cloud:before,.cloud:after { content:""; position:absolute; background:white; border-radius:50%; }.cloud:before { width:36px; height:36px; left:12px; bottom:2px; }.cloud:after { width:27px; height:27px; left:41px; bottom:1px; }
+    .proof { background:var(--ink); color:white; }.proof-inner { max-width:1120px; margin:auto; padding:32px 24px; display:flex; justify-content:space-around; gap:24px; text-align:center; }.proof b { display:block; font-size:1.35rem; }.proof span { color:#bbc4d7; font-size:.9rem; }
+    .section { padding:86px 24px; max-width:1120px; margin:auto; }.section h2 { font-size:clamp(2rem,4vw,3.4rem); letter-spacing:-.05em; margin:0 0 40px; max-width:620px; }.cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }.card { background:#f3eee5; padding:28px; border-radius:22px; }.card i { display:block; font-style:normal; font-size:2rem; margin-bottom:45px; }.card h3 { font-size:1.25rem; margin:0 0 8px; }.card p { margin:0; line-height:1.55; color:var(--muted); } footer { padding-top:28px; padding-bottom:40px; border-top:1px solid #e8e1d6; color:var(--muted); font-size:.9rem; }
+    @media (max-width:720px) { .navlinks a:not(.button) { display:none; }.hero { grid-template-columns:1fr; padding-top:22px; gap:34px; }.scene { height:330px; }.cards { grid-template-columns:1fr; }.proof-inner { justify-content:space-between; }.proof-inner div:last-child { display:none; } }
+  </style>
+</head>
+<body>
+  <nav><a class="brand" href="#">lu<span>m</span>a.</a><div class="navlinks"><a href="#features">Why Luma</a><a href="#about">Our story</a><a class="button" href="mailto:hello@example.com">Start a conversation</a></div></nav>
+  <main>
+    <section class="hero"><div><p class="eyebrow">Living, thoughtfully</p><h1>A little less noise. A lot more life.</h1><p class="lead">Luma creates calm, practical spaces for the way you actually live—beautifully simple, naturally yours.</p><div class="cta"><a class="button" href="#features">Explore our approach</a><span class="quiet">Made for real homes.</span></div></div><div class="scene" aria-label="Illustration of a home in green hills"><div class="sun"></div><div class="cloud"></div><div class="hill one"></div><div class="hill two"></div><div class="roof"></div><div class="house"><div class="window"></div><div class="window right"></div><div class="door"></div></div></div></section>
+  </main>
+  <section class="proof"><div class="proof-inner"><div><b>1,200+</b><span>spaces brought to life</span></div><div><b>98%</b><span>would recommend us</span></div><div><b>Since 2018</b><span>designing with care</span></div></div></section>
+  <section class="section" id="features"><p class="eyebrow">The Luma way</p><h2>Thoughtful design begins with listening.</h2><div class="cards"><article class="card"><i>✦</i><h3>Start with you</h3><p>Your habits, your home, your hopes. Every choice has a reason.</p></article><article class="card"><i>◒</i><h3>Keep it human</h3><p>No trend-chasing. Just warm materials and smart details that last.</p></article><article class="card"><i>↗</i><h3>Make it easy</h3><p>A clear, collaborative process from the first idea to the final cushion.</p></article></div></section>
+  <footer id="about">© 2026 Luma Studio · A sample website created for you</footer>
+</body>
+</html>
